@@ -1,0 +1,19 @@
+{
+  "disabled": false,
+    "bindings": [
+      {
+        "type": "blobTrigger",
+        "connection": "BLOB_STORAGE",
+        "path": "xmlfiles/{name}.xml",
+        "name": "xmlData",
+        "direction": "in"
+      },
+      {
+        "type": "blob",
+        "name": "JSON_Data",
+        "path": "jsonfiles",
+        "connection": "BLOB_STORAGE",
+        "direction": "out"
+      }
+    ]
+  }
